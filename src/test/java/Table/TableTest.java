@@ -5,9 +5,6 @@ import org.junit.Test;
 
 import static org.junit.Assert.*;
 
-/**
- * Created by toshiba on 18.03.2017.
- */
 public class TableTest {
 
     Table table;

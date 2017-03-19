@@ -6,3 +6,12 @@ jar {
     baseName = 'multythreading'
     version =  '1.0.0'
 }
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
+
+dependencies{
+    testCompile 'junit:junit:4.12'
+}

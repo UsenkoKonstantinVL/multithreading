@@ -12,7 +12,7 @@ public class NumberTranslaterTest {
     public void getNumberTest1() throws Exception {
         NumberTranslater translator = new NumberTranslater();
 
-        assertEquals(4, translator.getNumber("four"));
+        assertTrue(4 == translator.getNumber("four"));
     }
 
     @Test
