@@ -1,12 +1,10 @@
 import NumberTranslator.NumberTranslater;
 import Table.Table;
 import Writer.Writer;
-
-import java.util.HashMap;
 import java.util.Scanner;
 
 /**
- * Created by toshiba on 14.03.2017.
+ * Входной класс
  */
 public class main {
 
@@ -40,9 +38,4 @@ public class main {
     private static void printLine(String str){
         System.out.println(str);
     }
-
-    private static void printLine(int str){
-        System.out.println(str);
-    }
-
 }

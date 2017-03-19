@@ -3,7 +3,7 @@ package NumberTranslator;
 import java.util.HashMap;
 
 /**
- * Created by toshiba on 14.03.2017.
+ * Класс перевода из буквенного представления числа в цифровое
  */
 public class NumberTranslater {
     private HashMap<String, Integer> numberMap;
@@ -16,6 +16,12 @@ public class NumberTranslater {
         initializeDegreeMap();
     }
 
+    /***
+     * Функция, возвращающая цифровое представление буквенной записи
+     * @param number Строковое представление числа
+     * @return Цифровое представление строки
+     * @throws Exception
+     */
     public int getNumber(String number) throws Exception{
         int res = 0;
 
@@ -25,6 +31,12 @@ public class NumberTranslater {
         return res;
     }
 
+    /***
+     * Конвертер из строки в число
+     * @param strMass массив из слов
+     * @return число
+     * @throws Exception
+     */
     private int convertStrintToNumber(String[] strMass) throws Exception{
 
         int res = 0;

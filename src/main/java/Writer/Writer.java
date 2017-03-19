@@ -3,16 +3,19 @@ package Writer;
 import Table.Table;
 
 /**
- * Created by toshiba on 14.03.2017.
+ * Класс, задача которого выводить на консоль минимальное введенное число через каждые  5 секунд
  */
 public class Writer implements Runnable {
 
-    Table table;
+    private Table table;
 
     public Writer(Table table){
         this.table = table;
     }
 
+    /***
+     * Функция, которая через каждые 5 секунд достаёт из table минимальное значение и выводит его на консоль в прописном виде
+     */
     @Override
     public void run() {
         while(true) {

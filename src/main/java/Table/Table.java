@@ -1,19 +1,23 @@
 package Table;
 
-import javafx.scene.control.Tab;
-
 import java.util.HashMap;
 
 /**
- * Created by toshiba on 14.03.2017.
+ * Таблица для хранения значений
  */
 public class Table {
-    HashMap<String, Integer> map;
+
+    private HashMap<String, Integer> map;
 
     public Table(){
         map = new HashMap<>();
     }
 
+    /***
+     * Функция добавления к таблице
+     * @param str ключ значения
+     * @param num само значение
+     */
     synchronized public void put(String str, Integer num){
         if(map.containsKey(str))
         {
@@ -23,6 +27,10 @@ public class Table {
         map.put(str, num);
     }
 
+    /***
+     * Функция для вывода самого минимального значения в таблице
+     * @return Минимальное значение таблици в виде строки(буквенное представление)
+     */
     synchronized public String get(){
 
         if(map.size() == 0)
@@ -35,6 +43,10 @@ public class Table {
         return  res;
     }
 
+    /***
+     * Функция, которая определяет минимальное значение в таблице
+     * @return строка минимального значения
+     */
     private String getMin(){
         String strMin = "";
         Integer intMin = 0;
