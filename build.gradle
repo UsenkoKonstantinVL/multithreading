@@ -2,6 +2,3 @@ apply plugin: 'java'
 apply plugin: 'eclipse'
 apply plugin: 'idea'
 
-dependencies {
-    testCompile 'junit:junit:4.12'
-}
